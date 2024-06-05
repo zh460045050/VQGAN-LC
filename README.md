@@ -322,7 +322,7 @@ python evaluation.py ODE --model SiT-XL/2 \
 ### Image Quantization
 | Method  | Resolution | Utilization Rate | rFID Score | Checkpoints |
 |---------|---------------|----------|----------|----------|
-| VQGAN-LC | f16 | 99.9%     | 3.01 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
+| VQGAN-LC | f16 | 99.9%     | 2.62 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
 | VQGAN-LC | f8 | 99.5%     | 1.29 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
 
 ### Image Generation
