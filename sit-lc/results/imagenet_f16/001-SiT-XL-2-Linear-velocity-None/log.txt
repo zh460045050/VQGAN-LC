@@ -1,0 +1,1 @@
+[[34m2024-06-04 17:38:11[0m] Experiment directory created at results/imagenet_f16/001-SiT-XL-2-Linear-velocity-None
