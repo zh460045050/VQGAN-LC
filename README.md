@@ -316,6 +316,25 @@ python evaluation.py ODE --model SiT-XL/2 \
 
 ```
 
+
+## 📏 Checkpoints
+
+### Image Quantization
+| Method  | Resolution | Utilization Rate | rFID Score | Checkpoints |
+|---------|---------------|----------|----------|----------|
+| VQGAN-LC | f16 | 99.9%     | 3.01 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
+| VQGAN-LC | f8 | 99.5%     | 1.29 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
+
+### Image Generation
+| Method  | Resolution | Utilization Rate | FID Score | Checkpoints |
+|---------|---------------|----------|----------|----------|
+| GPT-LC | f16 | 97.0%     | 15.4 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
+| DiT-LC | f16 | 99.4%     | 10.8    | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
+| SiT-LC | f16 | 99.6%   | 8.40    | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)|
+| LDM-LC | f16 | 99.4% | 8.36 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
+| LDM-LC | f8 | 99.4% | 5.06 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
+
+
 ## 👨‍🏫 Acknowledgement
 This repo is built on [taming-transformers](https://github.com/CompVis/taming-transformers), [latent-diffusion](https://github.com/CompVis/latent-diffusion), [DiT](https://github.com/facebookresearch/DiT), and [SiT](https://github.com/willisma/SiT).
 
