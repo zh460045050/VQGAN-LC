@@ -28,7 +28,7 @@ Download ImageNet1K dataset and arranged with the following layout:
 │  ├──  ├── .........
 ```
 
-Download the train/val split of ImageNet1K from our [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing).
+Download the train/val split of ImageNet1K from our [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
 
 ## 🚗 Runing
@@ -37,7 +37,7 @@ Download the train/val split of ImageNet1K from our [Google Drive](https://drive
 
 #### Initialized Codebook Generation
 
-The Initialized codebook should be first downloaded from our [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) or generate with the following script:
+The Initialized codebook should be first downloaded from our [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4) or generate with the following script:
 ```bash
 imagenet_path="IMAGENET PATH"
 cd codebook_generation
@@ -71,7 +71,7 @@ torchrun --nproc_per_node 8 training_vqgan.py \
     --embed_dim 8
 ```
 
-We provide VQGAN-LC-100K trained for 20 epoches at [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing).
+We provide VQGAN-LC-100K trained for 20 epoches at [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
 #### VQGAN-LC Testing
 Testing VQGAN-LC for image quantization with the following script:
@@ -135,7 +135,7 @@ torchrun --nproc_per_node 1 training_gpt.py \
 
 ```
 
-We also provide the checkpoint of GPT-LC on [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing).
+We also provide the checkpoint of GPT-LC on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
 #### GPT Testing
 
@@ -184,7 +184,7 @@ python main.py --base configs/imagenet-f16-ours-100K.yaml \
                --logdir "./train_logs/ldm_lc_100K_f16"
 ```
 
-We also provide the LDM-LC checkpoints (training for 100 epoches) with both 256 latent resolution (f16) and 1024 latent resolution (f8) on [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing).
+We also provide the LDM-LC checkpoints (training for 100 epoches) with both 256 latent resolution (f16) and 1024 latent resolution (f8) on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
 #### LDM Testing
 
@@ -234,7 +234,7 @@ torchrun --nproc_per_node=8 train.py --model DiT-XL/2 \
 
 ```
 
-We also provide the checkpoint of DiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing).
+We also provide the checkpoint of DiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
 #### DiT Testing
 Evaluating the FID score of 50K generated images with DiT-LC:
@@ -288,7 +288,7 @@ torchrun --nproc_per_node=1 train.py --model SiT-XL/2 \
 
 ```
 
-We also provide the checkpoint of SiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing).
+We also provide the checkpoint of SiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
 #### DiT Testing
 Evaluating the FID score of 50K generated images with SiT-LC:
@@ -322,17 +322,17 @@ python evaluation.py ODE --model SiT-XL/2 \
 ### Image Quantization
 | Method  | Resolution | Utilization Rate | rFID Score | Checkpoints |
 |---------|---------------|----------|----------|----------|
-| VQGAN-LC | f16 | 99.9%     | 2.62 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
-| VQGAN-LC | f8 | 99.5%     | 1.29 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)
+| VQGAN-LC | f16 | 99.9%     | 2.62 | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4)
+| VQGAN-LC | f8 | 99.5%     | 1.29 | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4)
 
 ### Image Generation
 | Method  | Resolution | Utilization Rate | FID Score | Checkpoints |
 |---------|---------------|----------|----------|----------|
-| GPT-LC | f16 | 97.0%     | 15.4 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
-| DiT-LC | f16 | 99.4%     | 10.8    | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
-| SiT-LC | f16 | 99.6%   | 8.40    | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing)|
-| LDM-LC | f16 | 99.4% | 8.36 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
-| LDM-LC | f8 | 99.4% | 5.06 | [Google Drive](https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing) |
+| GPT-LC | f16 | 97.0%     | 15.4 | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4) |
+| DiT-LC | f16 | 99.4%     | 10.8    | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4) |
+| SiT-LC | f16 | 99.6%   | 8.40    | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4)|
+| LDM-LC | f16 | 99.4% | 8.36 | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4) |
+| LDM-LC | f8 | 99.4% | 5.06 | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4) |
 
 
 ## 👨‍🏫 Acknowledgement
