@@ -290,7 +290,7 @@ torchrun --nproc_per_node=1 train.py --model SiT-XL/2 \
 
 We also provide the checkpoint of SiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
 
-#### DiT Testing
+#### SiT Testing
 Evaluating the FID score of 50K generated images with SiT-LC:
 
 ```bash
