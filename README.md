@@ -3,7 +3,7 @@
 
 This is the implementation of the paper ``[Scaling the Codebook Size of VQ-GAN to 100,000 with a Utilization Rate of 99%]()''
 
-![Figure](./overview.png)
+![Figure](./overview.pdf)
 
 ## 🔧 Preparation
 
