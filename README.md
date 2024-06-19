@@ -28,7 +28,7 @@ Download ImageNet1K dataset and arranged with the following layout:
 │  ├──  ├── .........
 ```
 
-Download the train/val split of ImageNet1K from our [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
+Download the train/val split of ImageNet1K from our [Google Drive](https://drive.google.com/drive/folders/11mxqPcm8IbbcD6F6DUjufOxcQIXucBcT?usp=sharing).
 
 
 ## 🚗 Runing
@@ -234,7 +234,7 @@ torchrun --nproc_per_node=8 train.py --model DiT-XL/2 \
 
 ```
 
-We also provide the checkpoint of DiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
+We also provide the checkpoint of DiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/1nkpd82_Gmbvo77bPOjVjh60_jZDlsbJd?usp=sharing).
 
 #### DiT Testing
 Evaluating the FID score of 50K generated images with DiT-LC:
@@ -288,7 +288,7 @@ torchrun --nproc_per_node=1 train.py --model SiT-XL/2 \
 
 ```
 
-We also provide the checkpoint of SiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4).
+We also provide the checkpoint of SiT-LC (trained for 400K iterations) on [Google Drive](https://drive.google.com/drive/folders/10jORUAWLk7sCmwYgmkjdSA91_iEwYyRV?usp=sharing).
 
 #### SiT Testing
 Evaluating the FID score of 50K generated images with SiT-LC:
@@ -329,8 +329,8 @@ python evaluation.py ODE --model SiT-XL/2 \
 | Method  | Resolution | Utilization Rate | FID Score | Checkpoints |
 |---------|---------------|----------|----------|----------|
 | GPT-LC | f16 | 97.0%     | 15.4 | [Google Drive](https://drive.google.com/drive/folders/1DDHYpEKJUeVePIPzLf72DbUZ7Qa9x9yx?usp=sharing) |
-| DiT-LC | f16 | 99.4%     | 10.8    | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4) |
-| SiT-LC | f16 | 99.6%   | 8.40    | [Google Drive](https://drive.google.com/drive/folders/16wgluOVlq4s8oSJ7502eRa92cZ84DzN4)|
+| DiT-LC | f16 | 99.4%     | 10.8    | [Google Drive](https://drive.google.com/drive/folders/1nkpd82_Gmbvo77bPOjVjh60_jZDlsbJd?usp=sharing) |
+| SiT-LC | f16 | 99.6%   | 8.40    | [Google Drive](https://drive.google.com/drive/folders/10jORUAWLk7sCmwYgmkjdSA91_iEwYyRV?usp=sharing)|
 | LDM-LC | f16 | 99.4% | 8.36 | [Google Drive](https://drive.google.com/drive/folders/1AlqRTJABnxrEKxgLUp-v0O9cnDUnboO5?usp=sharing) |
 | LDM-LC | f8 | 99.4% | 5.06 | [Google Drive](https://drive.google.com/drive/folders/1AlqRTJABnxrEKxgLUp-v0O9cnDUnboO5?usp=sharing) |
 
