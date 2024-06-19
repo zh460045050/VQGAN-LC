@@ -1,7 +1,7 @@
 # VQGAN-LC
 
 
-This is the implementation of the paper ``[Scaling the Codebook Size of VQ-GAN to 100,000 with a Utilization Rate of 99%]()''
+This is the implementation of the paper ``[Scaling the Codebook Size of VQ-GAN to 100,000 with a Utilization Rate of 99%](https://arxiv.org/pdf/2406.11837)''
 
 ![Figure](./overview.png)
 
