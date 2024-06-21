@@ -56,7 +56,7 @@ torchrun --nproc_per_node 8 training_vqgan.py \
     --image_size 256 \
     --epochs 100 \
     --warmup_epochs 5 \
-    --lr 1e-4 \
+    --lr 5e-4 \
     --n_class 1000 \
     --imagenet_path $imagenet_path \
     --num_workers 16 \
