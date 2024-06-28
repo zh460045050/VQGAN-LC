@@ -147,7 +147,7 @@ imagenet_path="IMAGENET PATH"
 codebook_path="INIT CODEBOOK PATH"
 vq_path="VQGAN-LC PATH"
 gpt_path="GPT-LC PATH"
-torchrun --nproc_per_node 1 eval_generation_imagenet.py \
+torchrun --nproc_per_node 1 eval_generation.py \
     --batch_size 50 \
     --image_size 256 \
     --epochs 100 \
